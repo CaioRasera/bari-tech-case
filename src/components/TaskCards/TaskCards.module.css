@@ -1,0 +1,85 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.taskCard {
+  background: var(--bari-navy-light);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.titleWrapper {
+  flex: 1;
+  min-width: 0; /* Crucial para o ellipsis funcionar dentro de flexbox */
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--bari-white);
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.doneTitle {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.cardActions {
+  display: flex;
+  gap: 4px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tagsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dateInfo {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.overdueText {
+  color: #ff4d4f;
+  font-weight: 600;
+}
+
+@media (min-width: 769px) {
+  .cardsContainer {
+    display: none;
+  }
+}
