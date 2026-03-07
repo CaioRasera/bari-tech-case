@@ -1,0 +1,50 @@
+[
+  {
+    "id": "t-2001",
+    "title": "Revisar pendências de cadastro",
+    "description": "Conferir solicitações de cadastro pendentes e sinalizar inconsistências para o time responsável.",
+    "priority": "high",
+    "dueDate": "2026-02-20",
+    "done": false
+  },
+  {
+    "id": "t-2002",
+    "title": "Atualizar status de chamados internos",
+    "description": "Verificar chamados abertos nesta semana e atualizar o status conforme retorno das áreas.",
+    "priority": "medium",
+    "dueDate": "2026-02-21",
+    "done": false
+  },
+  {
+    "id": "t-2003",
+    "title": "Organizar follow-up com clientes",
+    "description": "Listar clientes que solicitaram retorno e registrar observações do contato.",
+    "priority": "medium",
+    "dueDate": "2026-02-22",
+    "done": true
+  },
+  {
+    "id": "t-2004",
+    "title": "Validar documentos recebidos",
+    "description": "Checar se os documentos enviados estão legíveis e completos antes de seguir para aprovação.",
+    "priority": "high",
+    "dueDate": "2026-02-23",
+    "done": false
+  },
+  {
+    "id": "t-2005",
+    "title": "Conferir relatórios do dia",
+    "description": "Verificar relatório diário e registrar possíveis divergências para análise.",
+    "priority": "low",
+    "dueDate": null,
+    "done": false
+  },
+  {
+    "id": "t-2006",
+    "title": "Padronizar descrições de tarefas antigas",
+    "description": "Revisar tarefas antigas com títulos genéricos e melhorar a descrição para facilitar consultas futuras.",
+    "priority": "low",
+    "dueDate": "2026-02-24",
+    "done": false
+  }
+]
