@@ -1,0 +1,103 @@
+.newTaskBtn {
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0 24px;
+}
+
+.statsRow {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.statCard {
+  flex: 1;
+  min-width: 140px;
+  background: var(--bari-navy-light);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.2s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+}
+
+.statNumber {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--bari-blue);
+  line-height: 1;
+}
+
+.statDone {
+  color: #10b981;
+}
+
+.statPending {
+  color: #f59e0b;
+}
+
+.statLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: capitalize;
+}
+
+.desktopView {
+  display: block !important;
+}
+
+.mobileView {
+  display: none !important;
+}
+
+.fabButton {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .desktopView {
+    display: none !important;
+  }
+
+  .mobileView {
+    display: block !important;
+  }
+
+  .fabButton {
+    display: flex !important;
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 60px !important;
+    height: 60px !important;
+    z-index: 9999 !important;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bari-blue) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .statsRow {
+    gap: 12px;
+  }
+
+  .statCard {
+    min-width: 100px;
+    padding: 16px;
+  }
+
+  .statNumber {
+    font-size: 28px;
+  }
+}

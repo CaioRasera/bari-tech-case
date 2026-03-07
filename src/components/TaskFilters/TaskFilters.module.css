@@ -1,0 +1,49 @@
+.filtersWrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filterGroup.searchGroup {
+  flex: 1;
+  min-width: 220px;
+}
+
+.filterLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.searchInput {
+  width: 100%;
+}
+
+.selectFilter {
+  min-width: 170px;
+}
+
+@media (max-width: 576px) {
+  .filtersWrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filterGroup.searchGroup {
+    min-width: 100%;
+  }
+
+  .selectFilter {
+    width: 100%;
+  }
+}
