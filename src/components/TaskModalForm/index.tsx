@@ -62,10 +62,8 @@ export default function TaskModalForm({
       onCancel={onCancel}
       okText="Salvar"
       cancelText="Cancelar"
-      destroyOnClose
-      maskClosable={true}
-      transitionName=""
-      maskTransitionName=""
+      destroyOnHidden
+      mask={{ closable: true }}
       modalRender={(node) => (
         <div className={styles.modalContainer}>{node}</div>
       )}
